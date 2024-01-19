@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {            
+            background: pink;
+            height: 100px;
+            margin: 10px 0;
+            /* margin: 16px; */
+        }
+
+        .box-px {
+            width: 200px;            
+        }
+
+        .box-1000px {
+            width: 1000px;
+            
+        }
+
+        .box-960px {
+            width: 960px;
+            
+        }
+
+        .box-50per {
+            width: 50%;
+            
+        }
+
+        .inner-box-50per {
+            width: 50%;
+            background: orange;
+            margin: 0;
+        }
+
+        .inner-height-50per {
+            height: 50%;
+            background: red;
+        }
+
+        .em-50per {
+            font-size: 0.75em;
+        }
+
+        .em-150per {
+            font-size: 1.5em;
+        }
+
+        .inner-box-em {
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="box-px">200px</div>
+
+    <div class="box-1000px">1000px</div>
+
+    <!-- 1920 by 1080 -->
+
+    <div class="box-960px">960px</div>    
+
+    <div class="box-50per">50per</div>
+    <!-- body의 50%, 기준은 해당 컨텐츠의 부모의 크기 -->
+
+    <div class="box-50per">
+        <div class="inner-box-50per">inner-box-50per</div>
+    </div>
+
+    <!-- 
+        컨텐츠가 늘어나더라도 높이가 늘어나지 않는 컨텐츠에는 height가 고정픽셀로 줘도 괜찮음. 그러나 일반적인 컨텐츠는 내용이 늘어남에 따라 height도 커져야 하므로, 고정된 height를 설정하는 것은 문제발생의 여지가 있다. 
+    -->
+
+    <div class="box-50per">
+        <div class="inner-height-50per">이너높이 50%</div>
+    </div>
+
+    
+
+    <!-- viewport: [컴퓨터] 뷰포트: 화면상의 화상 표시 영역. -->
+    <!-- vw: viewport width -->
+    <!-- vh: viewport height -->
+    <!-- 스크롤바의 크기를 인식하지 못해 종종 넘치곤 한다 -->    
+    <!-- hegiht: 50vw(높이를 뷰포트 가로 50%만큼 설정할 수 있다) -->
+    <!-- 위와같은 것은 유튜브 동영상 넣을 때, 굉장히 유용한다. -->
+    
+    <!-- 태그선택자는 왠만하면 쓰질 않는 것이 좋을까? -->
+    <!-- 뷰포트 소수점??? -->
+
+    <!-- 태그선택자는 리셋의 개념임. -->
+
+    <div>안녕하세요
+        <p class="em-75per">안녕한가요?</p>
+        <div class="em-150per">안녕한가요?
+            <p class="em-150per">안녕한가요?</p>
+        </div>
+    </div>
+
+    <!-- 
+        em: element???, 폰트사이즈를 비율로 상속받는 태그(최소값은 10px로 고정되어있음.)
+        rem: root element, html의 기본 폰트사이즈를 불러온다. em단위를 중첩해서 쓰다보면 기본사이즈로 돌아가기 어렵다. 원점으로 돌아간다. html 자체의 폰트사이즈를 변경한 상황이면 16px이 아닐 수도 있기 때문에 em의 초기화가 필요할 때가 있음.
+
+        폰트크기를 설정
+
+        폰트의 기본값은 16px,
+    -->
+
+    <div>
+        <div class="inner-box-em"></div>
+    </div>
+
+    <!-- 고정값 쓰고 싶으면 -> px -->
+    <!-- 가변값 % -->
+    <!-- 뷰포트 기준 영향 : vw, vh -->
+    <!-- 폰트기준크기: em, rem -->
+    
+</body>
+</html>
