@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+
+        * { 
+            margin: 0;
+            padding: 0;
+        }
+
+        /* body {
+            display: flex;
+            flex-direction: row;
+        } */
+
+        .container {
+            display: flex;
+            padding: 12px;
+            background: pink;
+            margin-bottom: 8px;
+            /* width: 1200px; */
+        }
+
+        .test1 {
+            padding: 0;
+            height: 500px;
+            justify-content: space-around;
+            /* justify-content: flex-start; 기본값 */
+
+            /* 가장 많이 쓰는 3가지 */
+            /* justify-content: center; */
+            /* justify-content: flex-end; */            
+            /* justify-content: space-between; */
+
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+
+            align-items: stretch;            
+            /* align-items: flex-start; 기본값*/
+	        
+            /* 가장 많이 쓰는 2가지 */            
+	        /* align-items: center; */
+            /* align-items: flex-end; */
+	        
+            /* align-items: baseline; */
+            /* align-items: stretch; */
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;            
+        }
+
+        .pink {            
+            background: yellow;            
+        }
+
+        .red {            
+            background: red;            
+        }
+
+        .blue {            
+            background: blue;
+            
+        }
+
+        .green {            
+            background: green;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>flex: 1. 구부리다; 2. 굴곡; 3. 플렉스; 4. 힘으로; 5. 굽음;</h1>
+
+    <div class="container">
+
+        <div class="pink box">1</div>
+
+        <div class="red box">2</div>
+
+        <div class="blue box">3</div>
+
+        <div class="green box">4</div>
+
+    </div>
+
+    <div class="container test1">
+
+        <div class="pink box">1</div>
+
+        <div class="red box">2</div>
+
+        <div class="blue box">3</div>
+
+        <div class="green box">4</div>
+
+    </div>
+    
+</body>
+</html>

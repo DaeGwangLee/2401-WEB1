@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            float: left;
+            color: white;
+        }
+
+        .pink-box {
+            width: 200px;
+            height: 200px;
+            background: pink;            
+        }
+
+        .red-box {
+            width: 200px;
+            height: 200px;
+            background: red;            
+        }
+
+        /* 플로트는 박스를 가로로 배치하기 위해 사용한 */
+        /* 이전 세대의 정렬 속성 입니다. */
+        /* float(부유하다) 라는 이름을 가지고있는 만큼 */
+        /* 컨텐츠들이 둥둥 떠다녀 웹 구조를 잡을때 의도하지 않은대로 작동할때가 많습니다. */
+        /* 몇년 전 까진 브라우저의 호환성때문에 float도 숙련될것을 권장했지만 */
+        /* 2024년에 float는 숙련될 대상은 아닙니다 */
+        /* 옛날에 이런걸 썼구나 정도로만 알고계십쇼..!(굳이 열심히 외우지 않아도 된다는 뜻) */
+
+        .blue-box {
+            width: 200px;
+            height: 200px;
+            background: blue;
+            clear: both;
+            float: right;
+        }
+
+        .green-box {
+            width: 200px;
+            height: 200px;
+            background: green;
+            float: right;
+            /* clear: both; */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="pink-box box">1</div>
+    <div class="red-box box">2</div>
+
+    <div class="blue-box box">3</div>
+    <div class="green-box box">4</div>
+
+    <!-- 
+        div.pink-box
+        div.red-box
+     -->
+
+</body>
+</html>
