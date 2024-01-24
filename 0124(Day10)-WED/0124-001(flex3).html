@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex3</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            width: 800px;
+
+            /* height: 100px; */
+            
+            border: 1px dotted blue;
+        }
+
+        .user-thumb {
+            width: 80px;
+            height: 80px;
+            background: gray;
+            border-radius: 50%;
+            flex-shrink: 0;
+            /* 
+                shrink: 수축 - > 1은 ok(작동), 0은 none(작동 안함) 
+                위 속성으로 컨텐츠가 수축되는 것을 막을 수 있다.
+                grow와 동일하게 비율로 계산해서 수축.
+
+                보통 flex-shrink: 0;을 많이 쓴다.
+
+                flex-grow <-> flex-shrink
+
+            */
+
+            /* left: 0%; */
+        }
+
+        .meta-container {
+            flex-grow: 1;
+            /***************************************************************** 
+            
+                flex-grow: 속성은 컨테츠의 크기를 늘려 부모컨텐츠의 빈칸을 채울 수 있는 속성, 여러 개체에 flex-grow 속성이 들어가면 비율로 크기를 나눠가진다.
+
+                A -> flex-grow: 1,
+                B -> flex-grow: 3 일때,
+                A는 25%, B는 75%를 차지하게 된다.
+
+                flex-grow를 안가진 다른 컨텐츠가 있을 때는 해당컨텐츠를 제외한 나머지 영역을 나눠가진다.
+            
+            *****************************************************************/
+
+            /* width: 550px;
+            height: 100px; */
+            /* margin-left: 10px; */
+        }
+
+        .unser-name {
+            font-size: 20px;
+            font-weight: bold;
+            /* width: 100%;
+            height: 50%; */
+        }
+
+        .user-subs-count {
+            font-size: 18px;
+            /* width: 100%;
+            height: 50%; */
+        }
+
+        .subs-button {
+            border: none;
+            background: red;
+            color: white;
+            font-weight: bold;
+            padding: 8px;
+            border-radius: 4px;
+
+            /* width: 300px;
+            height: 50%;
+            align-items: center; */
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>flex3</h1>
+
+    <!-- display: flex는 부모에게 적용하는 속성  -->
+    <!-- flex는 자식에게 직접 적용하는 속성 -->
+
+    <div class="container">
+        <div class="user-thumb"></div>
+        <div class="meta-container">
+            <h3 class="unser-name">컨텐츠 크리에이터</h3>
+            <p class="user-subs-count">구독자 1,999명</p>
+        </div>
+        <button class="subs-button">구독하기</button>
+    </div>
+
+</body>
+</html>
