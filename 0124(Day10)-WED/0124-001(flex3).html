@@ -13,6 +13,7 @@
 
         .container {
             display: flex;
+            align-items: center;
             width: 800px;
 
             /* height: 100px; */
@@ -81,8 +82,8 @@
             border-radius: 4px;
 
             /* width: 300px;
-            height: 50%;
-            align-items: center; */
+            height: 50%; */
+            
         }
 
     </style>
@@ -93,6 +94,21 @@
 
     <!-- display: flex는 부모에게 적용하는 속성  -->
     <!-- flex는 자식에게 직접 적용하는 속성 -->
+    <!-- 
+
+        flex -> grow(늘어남), shrink(수축), basis(기본크기 지정, width와 거의 동일)
+
+        basis와 width의 차이
+        Case 1: flex-direction이 row이 아니라, column일 때, 이러한 상황에 주로 쓰임.
+        Case 2: width는 무조건 고정, flex-basis는 최소값.
+                min-width라는 속성 또한 최소값.
+
+    -->
+
+    <!-- 
+        flex: 2, 1, 50%;으로도 작성할 수 있음. 
+        -> flex-grow: 2; flex-shrink: 1; flex-basis: 50; 와 같다.
+    -->
 
     <div class="container">
         <div class="user-thumb"></div>
