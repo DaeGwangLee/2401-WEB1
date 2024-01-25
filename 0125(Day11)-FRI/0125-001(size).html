@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>size</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 400px;
+            height: 200px;
+            background: gray;
+            text-align: center;
+            line-height: 200px;            
+        }
+
+        .padding-box {
+            width: 400px;
+            height: 200px;
+            background: pink;
+            padding: 32px;
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        .border-box {
+            width: 400px;
+            height: 200px;
+            background: aquamarine;
+            border: 10px solid green;
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>size</h1>
+
+    <div class="box">box</div>
+
+    <div class="padding-box">padding-box</div>
+
+    <div class="border-box">border-box</div>
+    
+</body>
+</html>

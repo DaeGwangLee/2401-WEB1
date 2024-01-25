@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background: gray;
+            display: none;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>display</h1>
+
+    <!-- 
+        <display>
+        1. block
+        2. inline: 
+            글자는 쓰는 속성, 
+            알파벳의 특징으로 인해 콘텐츠 하단에 미묘한 여백이 있음.
+        3. inline-block: 
+            flex의 존재로 거의 안쓰는 속성이 됨, 
+            알파벳의 특징으로 인해 콘텐츠 하단에 미묘한 여백이 있음. 
+            이미지는 인라인블록임.
+            인라인블록으로 구조를 만드는 것은 지양해야 함.
+            블록요소를 베이스라인 위에 얹어야 할 상황에서는 굉장히 유용함(그런 상황 잘 없음).
+        4. none:
+            개체를 아예 출력하지 않는다.
+            웹에서 컨텐츠를 숨기는 여러가지 방식이 있으며, 
+            가장 강력한 방식임.
+            정적인 웹사이트에서는 필요없음.
+            반응형 웹이나 인터랙티브 웹에서는 유용하게 쓰임.
+            그러나 display 속성 특성상 애니메이션 구현에 쓰기는 어려움.
+            웹제작시 생각보다 자주 쓰임.
+        5. flex
+        6. grid
+    -->
+
+    <div class="box"></div>
+    <div class="box2"></div>
+</body>
+</html>
