@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 
+        *: 에스터리스크(asterisk: 별표) 
+        selector: 
+
+
+
+
+    -->
+
+    <!-- 
+        .container.contents는 다음을 가리킨다. 
+    -->
+    <div class="container contents"></div>
+
+    <!-- 
+        .container > .contents는 다음을 가리킨다. 
+        >: 직계자식을 가리킨다. 
+    -->
+    <div class="container">
+        <div class="contents"></div>
+    </div>
+
+    <!-- 
+        .container .contents는 다음을 가리킨다. 
+        띄어쓰기는 후손 선택자. 
+        .container 안의 모든 .contents는 계통과 관계없이 모두 영향을 받는다. 
+    -->
+    <div class="container">
+        <div class="contents"></div>
+        <div class="inner">
+            <div class="contents"></div>
+        </div>
+    </div>
+
+
+    <!-- 상속은 최대 3단계 이상을 벗어나지 말 것!!! -->
+
+
+    
+    
+</body>
+</html>

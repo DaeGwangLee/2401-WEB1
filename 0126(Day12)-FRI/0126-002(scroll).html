@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll</title>
+    <style>
+
+        * {
+            margin: 0; 
+            padding: 0;
+        }
+
+        .container {
+            width: 1200px;
+            height: auto;            
+            border: 1px dotted black;            
+            box-sizing: border-box;
+            /* display: flex;
+            gap: 30px;
+            padding: 10px; */
+        }
+
+        .scroll_box {
+
+            overflow: scroll;
+            /* 
+                x, y 양방향으로 스크롤이 생기는 문제가 있음. 
+            */
+
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+        }
+
+        .scroll_y_box {
+            overflow-y: auto;
+            /* 
+                y 방향으로만 스크롤이 생김.
+            */
+
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+
+        }
+
+        /* 
+            overflow: auto와 overflow-y: scroll 차이        
+            overflow: auto -> 텍스트가 부모의 보더를 벗어나면 auto는 자동으로 생긴다.
+            overflow-y: scroll -> 반면, 부모의 보더와 상관없이 그냥 생긴다.  
+        */
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>scroll</h1>
+        <div class="scroll_box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum quos asperiores dolorum in, tempore aliquid voluptatem libero quidem sapiente commodi, veniam obcaecati temporibus alias eos ex amet, adipisci dicta!
+
+        </div>
+        <div class="scroll_y_box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum quos asperiores dolorum in, tempore aliquid voluptatem libero quidem sapiente commodi, veniam obcaecati temporibus alias eos ex amet, adipisci dicta!
+        </div>
+    </div>
+    
+</body>
+</html>

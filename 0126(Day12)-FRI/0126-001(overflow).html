@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0; 
+            padding: 0;
+        }
+
+        .container {
+            width: 1200px;
+            height: auto;
+            display: flex;
+            gap: 30px;
+            padding: 10px;
+            border: 1px solid red;            
+            box-sizing: border-box;            
+        }
+
+        .box {
+            width: 250px;
+            height: 250px;
+            border: 1px dotted black;
+        }
+
+        h2 {
+            color: red;
+        }
+
+        #no1_hidden {
+            overflow: hidden;
+        }
+
+        #no2_visible {
+            overflow: visible;
+        }
+
+        #no3_auto {
+            overflow: auto;
+        }
+
+        #no4_scroll {
+            overflow: scroll;
+        }
+
+        #no5_none {
+            overflow: none;
+        }        
+
+    </style>
+</head>
+<body>
+
+    <h1>overflow</h1>
+    <div class="container">
+        <div class="box" id="no1_hidden">
+            <h2>no1_hidden</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa harum ex eos expedita quod accusantium ratione rerum, cumque laboriosam praesentium recusandae quas consectetur voluptas blanditiis ipsam eveniet? Veritatis, voluptas vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa harum ex eos expedita quod accusantium ratione rerum, cumque laboriosam praesentium recusandae quas consectetur voluptas blanditiis ipsam eveniet? Veritatis, voluptas vero?
+        </div>
+        <div class="box" id="no2_visible">
+            <h2>no2_visible</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa harum ex eos expedita quod accusantium ratione rerum, cumque laboriosam praesentium recusandae quas consectetur voluptas blanditiis ipsam eveniet? Veritatis, voluptas vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa harum ex eos expedita quod accusantium ratione rerum, cumque laboriosam praesentium recusandae quas consectetur voluptas blanditiis ipsam eveniet? Veritatis, voluptas vero?
+        </div>
+        <div class="box" id="no3_auto">
+            <h2>no3_auto</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa harum ex eos expedita quod accusantium ratione rerum, cumque laboriosam praesentium recusandae quas consectetur voluptas blanditiis ipsam eveniet? Veritatis, voluptas vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa harum ex eos expedita quod accusantium ratione rerum, cumque laboriosam praesentium recusandae quas consectetur voluptas blanditiis ipsam eveniet? Veritatis, voluptas vero?
+        </div>
+        <div class="box" id="no4_scroll">
+            <h2>no4_scroll</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa harum ex eos expedita quod accusantium ratione rerum, cumque laboriosam praesentium recusandae quas consectetur voluptas blanditiis ipsam eveniet? Veritatis, voluptas vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa harum ex eos expedita quod accusantium ratione rerum, cumque laboriosam praesentium recusandae quas consectetur voluptas blanditiis ipsam eveniet? Veritatis, voluptas vero?
+        </div>
+        <div class="box" id="no5_none">
+            <h2>no5_none</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa harum ex eos expedita quod accusantium ratione rerum, cumque laboriosam praesentium recusandae quas consectetur voluptas blanditiis ipsam eveniet? Veritatis, voluptas vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa harum ex eos expedita quod accusantium ratione rerum, cumque laboriosam praesentium recusandae quas consectetur voluptas blanditiis ipsam eveniet? Veritatis, voluptas vero?
+        </div>
+    </div>
+
+    <!-- 
+        html 및 css는 하단에 작성된 것들이 화면 출력(brig to front)의 우선순위를 가짐.
+    -->
+    
+</body>
+</html>
