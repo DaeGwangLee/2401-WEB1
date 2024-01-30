@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소선택자</title>
+    <style>
+
+        /* 
+            <질문>
+            0. html 기준으로 가상인가?
+            1. 보통 많이 쓰는 스타일? -> (:) or (::)
+            2. 특수문자로 대체할 수 있나? -> 폰트에 따라 디자인이 달라진다.
+            3. z-index에도 적용할 수 있는가?
+        */
+
+        /* 
+            :: -> 가상요소 선택자는 콜론이 2개.
+        */
+
+        h2::before {
+            content: '하하';
+            color: red;
+        }
+
+        p::after {
+            content: '호호';
+            color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>가상요소선택자</h1>
+    <h2>Pseudo-elements(스도우 엘러먼츠)</h2>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident possimus consequatur delectus commodi doloremque excepturi itaque eos, blanditiis dolorum eum nobis aspernatur maiores nulla debitis, accusantium porro. Recusandae, nesciunt aliquam.
+    </p>
+    
+    
+</body>
+</html>

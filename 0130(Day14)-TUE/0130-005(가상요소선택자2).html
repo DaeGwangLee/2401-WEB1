@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+
+        .link-add-arrow {
+            text-decoration: none;
+            color: #222;
+
+        }
+
+        .link-add-arrow::after {
+            content: "";
+            /* 가상요소 선택자에서 content: "";는 반드시 필요함. */
+            /* before와 after는 inline이 기본속성이라 모양을 만들 때에는 inline-block이나 block을 넣어야 함. */
+
+            display: inline-block;
+            /* 
+                display: inline; 적용시 사람짐.
+                인라인은 크기설정 안됨.
+            */
+
+            width: 8px;
+            height: 8px;
+            border: 2px solid #222;
+
+            transform: rotate(-45deg);
+
+            border-top: none;
+            border-left: none;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <a class="link-add-arrow" href="#">Buy now</a> 
+    <br><br>
+    <a class="link-add-arrow" href="#">새로 만든 것 구매하기</a>
+    
+</body>
+</html>
