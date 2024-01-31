@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+
+        .ex {
+            background-image: url(art.jpg);
+            width: 50%;
+            height: 300px;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 1px solid #222;
+        }
+
+        .bad {
+            background-size: 100% 100%;
+        }
+
+        .good-cover {
+            background-size: cover;
+        }
+
+        .good-contain {
+            background-size: contain;
+            /* contain -> that is contained */
+        }
+
+        h2 {
+            color: red;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>나쁜 예</h2>
+    <div class="bad ex"></div>
+    <br>
+
+    <h2>배경을 전부 채워야 할 때: cover</h2>
+    <div class="good-cover ex"></div>
+    <br>
+
+    <h2>이미지를 전부 보여줘야 할 때: contain</h2>
+    <div class="good-contain ex"></div>
+    <br>
+
+</body>
+</html>
