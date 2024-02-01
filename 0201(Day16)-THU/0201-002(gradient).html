@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            gap: 8px;
+            text-align: center;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        h2 {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .content {
+            width: 200px;
+            height: 240px;
+            border: 1px solid #777;
+            border-radius: 8px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+
+        .color-box {
+            /* 화면비율 1:1로 결정 */
+            aspect-ratio: 1;
+        }
+
+        .box1 {            
+            background: pink;
+        }
+
+        .box2 {            
+            background-image: linear-gradient(90deg, black 30%, white 90%);
+            /* linear-gradient(방향, 색상1, 색상2) */
+            
+        }
+
+        .box3 {
+            background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+        }
+
+        .box4 {
+            background-image: radial-gradient(ellipse at center, #aaa, #333);
+            /* 기본값: ellipse at center */
+            /* ellipse: 1.	타원; 2. 난선형; 3. 타원주; */
+        }
+
+        .box5 {
+            background-image: radial-gradient(#aaa, #333);
+        }
+
+        .box6 {
+            background-image: conic-gradient(#aaa, #333);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- 그라디언트는 백그라운드 컬러가 아니라, 백그라운드 이미지로 들어감. -->
+    
+    <ul>
+        <li class="content">
+            <h2>단색</h2>
+            <div class="color-box box1"></div>
+        </li>
+        <li class="content">
+            <h2>그래디언트1</h2>
+            <div class="color-box box2"></div>
+        </li>
+        <li class="content">
+            <h2>마이 그래디언트</h2>
+            <div class="color-box box3"></div>
+        </li>
+        <li class="content">
+            <h2>원형 그래디언트</h2>
+            <div class="color-box box4"></div>
+        </li>
+        <li class="content">
+            <h2>내 원형</h2>
+            <div class="color-box box5"></div>
+        </li>
+        <li class="content">
+            <h2></h2>
+            <div class="color-box box6"></div>
+        </li>
+        <li class="content">
+            <h2></h2>
+            <div class="color-box box7"></div>
+        </li>
+        <li class="content">
+            <h2></h2>
+            <div class="color-box box8"></div>
+        </li>
+        <li class="content">
+            <h2></h2>
+            <div class="color-box box9"></div>
+        </li>
+        
+        
+    </ul>
+
+</body>
+</html>

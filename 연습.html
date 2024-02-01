@@ -8,17 +8,19 @@
     <style>
 
         .board {
+            border: 10px solid black;
             width: fit-content;
-            margin: 20px;
-            border: 1px solid black;            
+            
         }
 
         .row {
+            background: white;
             display: flex;
         }
 
         .cell {
-            background: white;
+            width: 100px;
+            height: 100px;
         }
 
         .row:nth-child(2n) > .cell:nth-child(2n) {
@@ -28,6 +30,9 @@
         .row:nth-child(2n+1) > .cell:nth-child(2n+1) {
             background: black;
         }
+
+
+
 
     </style>
 </head>
