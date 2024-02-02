@@ -7,42 +7,28 @@
     <link rel="stylesheet" href="../reset.css">
     <style>
 
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            display: flex;
-            justify-content: center;
-            background: yellow;
-            /* align-items: center; */
-        }
-
         .board {
-            border: 1px solid #222; 
             width: fit-content;
-            margin: 20px;
-            background: white;
+            border: 1px solid black;
         }
 
         .row {
             display: flex;
+            background: white;
         }
 
         .cell {
             width: 100px;
             height: 100px;
-            
         }
 
         .row:nth-child(2n) > .cell:nth-child(2n) {
             background: black;
-        } /* 짝수: 2n */
+        }
 
         .row:nth-child(2n+1) > .cell:nth-child(2n+1) {
             background: black;
-        } /* 홀수 : 2n+1 */
+        }
 
     </style>
 </head>
@@ -130,7 +116,6 @@
             <div class="cell"></div>
         </div>
     </div>
-
     
 </body>
 </html>
